@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Elements name="Home_Page">
+	<WebElement name="likebutton" by="xpath" using="//div[@class='test']" type="button" multiple="false"/>
+	<WebElement name="share" by="id" using="share-12345" type="label" multiple="true"/>
+	<WebElement name="logout" by="id" using="Logout" type="button" multiple="false"/>
+</Elements>

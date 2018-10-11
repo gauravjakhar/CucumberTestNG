@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Elements name="Login_Page">
+	<WebElement name="userName" by="id" using="username" type="textbox" multiple="false"/>
+	<WebElement name="password" by="id" using="password" type="textbox" multiple="false"/>
+	<WebElement name="ward" by="id" using="Inpatient Ward" type="label" multiple="false"/>
+	<WebElement name="loginButton" by="id" using="loginButton" type="button" multiple="false"/>
+	<WebElement name="msg" by="tagName" using="h4" type="lable" multiple="false"/>
+</Elements>
