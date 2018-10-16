@@ -7,6 +7,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
+
+import utility.Drivers;
+
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 
@@ -18,7 +21,7 @@ public class ORCreater {
 
 	private static String CreateOR() {
 		String str = "package objectModel;\n\nimport org.openqa.selenium.By;\nimport java.util.List;\nimport org.openqa.selenium.WebElement;\n";
-		str = str + "import utility.Drivers;\n\npublic class ObjectRepository {\n";
+		str = str + "import utility.Drivers;\n\npublic class ObjectRepository extends Drivers{\n";
 		try {
 			File allFiles = new File("OR_XMLs");
 			for (File inputFile : allFiles.listFiles()) {
@@ -36,10 +39,10 @@ public class ORCreater {
 					if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 						if (eElement.getAttribute("multiple").equals("true")) {
 							str = str + "\n\t\tpublic static List<WebElement> " + eElement.getAttribute("name") + "()";
-							str = str + " {return Drivers.driver.findElements(By." + eElement.getAttribute("by");
+							str = str + " {return driver.findElements(By." + eElement.getAttribute("by");
 						} else if (eElement.getAttribute("multiple").equals("false")) {
 							str = str + "\n\t\tpublic static WebElement " + eElement.getAttribute("name") + "()";
-							str = str + " {return Drivers.driver.findElement(By." + eElement.getAttribute("by");
+							str = str + " {return driver.findElement(By." + eElement.getAttribute("by");
 						}
 						str = str + "(\"" + eElement.getAttribute("using") + "\"));}";
 					}

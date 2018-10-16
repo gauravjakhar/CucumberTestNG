@@ -11,18 +11,11 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/g.bw.kumar/Downloads/cucumber-core-1.2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/g.bw.kumar/Downloads/cucumber-java-1.2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/g.bw.kumar/Downloads/cucumber-testng-1.2.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/g.bw.kumar/Downloads/gherkin-2.12.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/g.bw.kumar/Downloads/selenium-java-3.14.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/g.bw.kumar/Downloads/testng-6.14.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/g.bw.kumar/Downloads/selenium-server-standalone-3.14.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/g.bw.kumar/Downloads/cucumber-jvm-deps-1.0.3-javadoc.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
